@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* HEADER PART */
+
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #28377e;
+    margin-top: 15px;
+    /* padding-bottom: 70px; */
+}
+p{
+    color: #b0b0b1;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    /* padding-bottom: 200px; */
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+}
+nav{
+    width: 60%;
+    /* padding-top: 20px; */
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+nav ul li{
+    
+}
+nav ul li a{
+    
+margin-left: 15px;
+    
+font-size: 15px;
+    
+font-weight: 700;
+    
+text-transform: uppercase;
+    
+color: #204f87;
+}
+
+/* HEADER PART */
+
+/* BANNER PART */
+
+.banner{
+    background-image: url(../images/banner.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: -4px;
+    margin-top: 18px;
+}
+.content{
+    width: 477px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.icon{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50% -20%);
+    animation: icon-ani 1s linear infinite;
+    animation-direction: alternate;
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+}
+@keyframes icon-ani{
+    0%{
+        transform: translate(-50%, 20%);
+    }
+    100%{
+        transform: translate(-50%, 100%);
+    }
+}
+
+/* BANNER PART*/
+
+/* WHO WE ARE */
+
+.who-we-are-content{
+    width: 50%;
+    float: left;
+    margin-top: 150px;
+    position: relative;
+    /* padding-bottom: 200px; */
+    margin-bottom: 200px;
+    
+}
+.who-we-are-content::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: #f05228;
+    top: 0;
+}
+.who-we-are-content h1{
+
+padding-bottom: 15px;
+}
+.who-we-are-content p{
+
+padding-right: 200px;
+
+margin-bottom: 15px;
+}
+.who-we-are-img{
+    width: 50%;
+    float: right;
+    padding-top: 120px;
+}
+.who-we-are-img img{
+
+width: 50%;
+}
+
+
+/* WHO WE ARE */
+
+/* WHAT WE DO */
+
+.what-we-do-part{
+
+background: #f7f8f8;
+}
+.head{
+
+padding-top: 70px;
+
+position: relative;
+
+/* height: 70px; */
+
+/* background: red; */
+
+margin: auto;
+
+width: 237px;
+}
+.head::before{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 48px;
+    background: #f15628;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    }
+.what-we-do-content{
+    display: flex;
+    /* position: relative; */
+    padding-bottom: 100px;
+    margin-top: 80px;
+    background-image: url(../images/what-we-do-04.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.items{
+
+/* position: absolute; */
+
+position: relative;
+
+margin: 10px;
+
+padding-top: 17px;
+
+padding-bottom: -17px;
+
+height: 415px;
+}
+.items:hover .img::after{
+    opacity: 1;
+    top: 0%;
+}
+.img{
+
+/* padding-right: 15px; */
+
+/* padding-top: 70px; */
+
+position: relative;
+height: 100%;
+
+
+/* padding-bottom: 80px; */
+}
+.img::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .4s ease;
+    
+
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,207cca+41,207cca+41,2989d8+42,2d3286+100&0+0,1+100 */
+    left: 0;
+    /* bottom: 0; */
+    top: 0;
+    /* opacity: 0; */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(32,124,202,0.41) 41%, rgba(41,137,216,0.42) 42%, rgba(45,50,134,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(32,124,202,0.41) 41%,rgba(41,137,216,0.42) 42%,rgba(45,50,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(32,124,202,0.41) 41%,rgba(41,137,216,0.42) 42%,rgba(45,50,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#2d3286',GradientType=0 ); /* IE6-9 */
+}
+.img img{
+    
+}
+.what-we{
+
+position: absolute;
+
+/* top: 20%; */
+
+left: 55%;
+
+bottom: 50%;
+
+text-transform: uppercase;
+
+transform: translate(-55%, -50%);
+
+color: #fff;
+
+opacity: 0;
+
+transition: all .4s ease;
+
+/* margin-right: 10px; */
+}
+.items:hover .what-we{
+    opacity: 1;
+    transform: translate(-50%, 50%);
+   
+}
+.items i{
+    
+position: absolute;
+    
+/* top: 50%; */
+    
+left: 20%;
+    
+bottom: 20%;
+    
+transform: translate(-20%, -50%);
+    
+font-size: 30px;
+    
+color: #fff;
+opacity: 0;
+transition: all .4s ease;
+}
+.items:hover i{
+    opacity: 1;
+    transform: translate(-20%, -50%);
+    left: 50%;
+}
+
+
+/* WHAT WE DO */
+
+/* OUR ATTORNEYS */
+.our-attorneys-part{background-image: url(../images/background.png);background-position: center;background-repeat: no-repeat;background-size: cover;height: 1350px;}
+.our-attorneys-part .container{
+    display: flex;
+    justify-content: space-between;
+}
+.side-header{
+    width: 25%;
+    /* color: #fff; */
+    position: relative;
+}
+.side-header::before{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 45px;
+    background: #f47536;
+    top: 20%;
+    /* bottom: 0; */
+    left: 40%;
+    top: 13%;
+}
+.side-header p{
+    padding-left: 122px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+.side-header span{
+    padding-left: 120px;
+}
+.side-header h1{
+
+width: 100px;
+
+padding-top: 150px;
+
+padding-left: 120px;
+
+color: white;
+
+margin-top: 27px;
+}
+span{
+    color: #f2622c;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 15px;
+    /* margin-left: 122px; */
+    /* margin-top: 15px; */
+}
+.imagee-content{
+    width: 70%;
+    padding-top: 130px;
+    /* margin-right: 10px; */
+    /* padding-bottom: 100px; */
+    /* margin-bottom: 100px; */
+}
+.top-img-content{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.front-img{
+    width: 50%;
+    position: relative;
+    margin-right: 15px;
+}
+.img-file{
+
+position: relative;
+
+/* width: 50px; */
+}
+.front-img:hover .img-file::after{
+    opacity: 1;
+}
+.img-file::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,207cca+40,207cca+40,2989d8+41,191446+100&0+1,1+100 */
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 1%, rgba(32,124,202,0.39) 40%, rgba(41,137,216,0.4) 41%, rgba(25,20,70,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 1%,rgba(32,124,202,0.39) 40%,rgba(41,137,216,0.4) 41%,rgba(25,20,70,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 1%,rgba(32,124,202,0.39) 40%,rgba(41,137,216,0.4) 41%,rgba(25,20,70,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#191446',GradientType=0 ); /* IE6-9 */
+}
+.img-file img{
+
+width: 100%;
+}
+.img-content{
+    
+position: absolute;
+    
+content: "";
+    
+top: 80%;
+    
+left: 40%;
+    
+transform: translate(-60%, -20%);
+    
+font-size: 16px;
+    
+color: #fff;
+    
+text-transform: uppercase;
+    
+width: 50%;
+opacity: 0;
+    
+/* height: 39px; */
+}
+.front-img:hover .img-content{
+    opacity: 1;
+}
+
+.img-content h2{
+
+}
+.bottom-img-content{
+
+display: flex;
+
+justify-content: space-between;
+
+margin-top: 15px;
+}
+
+/* OUR ATTORNEYS */
+
+/* LANGUAGE PART */
+
+.language-header{
+    
+width: 270px;
+    
+/* background: red; */
+    
+margin: auto;
+    
+padding-top: 100px;
+    
+padding-bottom: 60px;
+position: relative;
+}
+.language-header::before{position: absolute;content: "";height: 4px;width: 45px;background: #f37436;left: 50%;transform: translateX(-50%);}
+.language-content{
+
+width: 100%;
+
+display: flex;
+
+justify-content: space-between;
+
+margin-bottom: 100px;
+}
+.languages{
+
+width: 17%;
+}
+.languages h2{
+    
+color: #28377e;
+    
+font-size: 24px;
+    
+font-weight: 800;
+    
+text-transform: uppercase;
+    
+margin-bottom: 15px;
+}
+
+/* LANGUAGE PART */
+
+/* CONTACT US */
+
+.contact-us-part{
+
+background: #28377e;
+
+width: 100%;
+
+height: 450px;
+}
+.contact-header{
+
+font-size: 27px;
+
+width: 271px;
+
+/* background: red; */
+
+margin: auto;
+
+padding-top: 80px;
+
+font-size: 13px;
+
+font-size: 26px;
+
+text-transform: uppercase;
+
+position: relative;
+
+color: #fff;
+
+/* margin-top: 10px; */
+
+/* padding-top: 10px; */
+}
+.contact-header::before{position: absolute;content: "";height: 4px;width: 50px;background: #f36e34;left: 50%;top: 57%;transform: translateX(-57%,50%);transform: translate(-57%, -50%);}
+.contact-form{
+
+width: 600px;
+
+margin: auto;
+
+margin-top: 65px;
+
+/* left: 30%; */
+
+padding-left: 15%;
+}
+.form{
+
+}
+.contact-form input{
+
+border: none;
+
+width: 67%;
+
+background: transparent;
+
+border-bottom: 1px #4759a7 solid;
+
+margin-bottom: 30px;
+
+/* color: #fff; */
+
+font-size: 16px;
+}
+.contact-us-part input[type=submit]{
+    
+color: white;
+    
+cursor: pointer;
+    
+width: 11%;
+    
+height: 30px;
+    
+border: none;
+    
+background: #f2622c;
+    
+position: absolute;
+    
+left: 48%px;
+    
+display: block;
+    
+/* padding: 4px; */
+    
+padding: -57px;
+    
+padding: 0,70px;
+    
+/* padding-left: 30px; */
+    
+left: 44%;
+}
+
+
+/* CONTACT US */
+
+/* FOOTER PART */
+
+footer{background: #0c1234;height: 100px;width: 100%;display: flex;justify-content: space-around;}
+footer .container{
+
+display: flex;
+
+justify-content: space-around;
+
+align-items: center;
+}
+.text{
+
+}
+.social{
+
+}
+.social ul{
+
+display: flex;
+}
+.social ul li{
+
+margin-left: 17px;
+
+color: white;
+
+/* background: white; */
+}
+
+/* FOOTER PART */
